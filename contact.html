@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
+    <link href="./src/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <title>le titre de site </title>
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+        }
+.wrapper{
+    width: 80%;
+    margin: 0% auto;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+form {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    padding: 10px 20px;
+}
+label{
+    font-weight: 300;
+    color: rgba(28, 28, 28, 0.854);
+}
+input,select,textarea{
+    padding: 4px 15px;
+    max-width: 90%;
+}
+button {
+    grid-column: span 2;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    outline: none;
+    border: 1px solid black;
+}
+    </style>
+</head>
+
+<body>
+    <!-- navbar starts here -->
+    <nav class="navbar navbar-expand-lg  fixed-top">
+        <div class="container">
+          <a class="navbar-brand  fs-3 text-white" href="/">Travel.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#packages">Packages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#shop">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About us </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">pages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-primary rounded-pill " style="background-color:#8C68CD; border-color: #8C68CD;">Book
+                  Now</button>
+              </li>
+            </ul>
+            <i class="fa fa-bars d-md-block d-none text-white fs-3"></i>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar ends here -->
+      
+      <div class="wrapper">
+        <h1>Contact us </h1>
+        <form>
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom" required>
+            <label for="prenom">Prénom</label>
+            <input type="text" name="prenom" id="prenom" required>
+            <label for="sexe">sexe</label>
+            <div id="sexe">
+                <label for="Male">M</label>
+            <input type="radio" name="sexe" id="Male" required>
+            <label for="Female">F</label>
+            <input type="radio" name="sexe" id="Female" required>
+            </div>
+            <label for="birthday" >Date de nissance</label>
+            <input type="date" name="birthday" id="birthday" required>
+            <label for="desc">address</label>
+            <textarea name="desc" id="desc" required></textarea>
+            <label for="ville">ville</label>
+            <select name="ville" id="ville" required>
+                <option value="ouarzazate">ouarzazate</option>
+                <option value="Zagora">zagora</option>
+                <option value="errachidia">errachidia</option>
+            </select>
+            <button>enregistrer</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
